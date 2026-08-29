@@ -1,0 +1,839 @@
+/* ================================
+   RÉINITIALISATION
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   PAGE
+================================ */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    color: #1e1e2f;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   EN-TÊTE
+================================ */
+
+header {
+    width: 100%;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.logo span {
+    color: #7c3aed;
+}
+
+
+/* Menu */
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #4f46e5;
+}
+
+
+/* ================================
+   ACCUEIL
+================================ */
+
+.hero {
+    min-height: 600px;
+
+    padding: 80px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+/* Texte */
+
+.hero-text {
+    max-width: 600px;
+}
+
+.petit-titre {
+    color: #6366f1;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 75px);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+
+    color: #17172b;
+}
+
+.description {
+    font-size: 19px;
+
+    color: #666;
+
+    margin-bottom: 35px;
+
+    max-width: 550px;
+}
+
+
+/* ================================
+   BOUTON
+================================ */
+
+.bouton {
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.bouton:hover {
+    transform: translateY(-3px);
+
+    background: #4338ca;
+}
+
+
+/* ================================
+   CARTE HERO
+================================ */
+
+.hero-card {
+    width: 330px;
+    height: 330px;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #7c3aed
+    );
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    box-shadow:
+        0 25px 60px rgba(79, 70, 229, 0.25);
+
+    transform: rotate(3deg);
+}
+
+.hero-card .emoji {
+    font-size: 70px;
+
+    margin-bottom: 20px;
+}
+
+.hero-card h2 {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    font-size: 17px;
+}
+
+
+/* ================================
+   SECTION OUTILS
+================================ */
+
+#outils {
+    padding: 90px 8%;
+
+    background: white;
+}
+
+.section-titre {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.section-titre p {
+    color: #6366f1;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+}
+
+.section-titre h2 {
+    font-size: 42px;
+
+    margin: 10px 0;
+}
+
+.section-titre span {
+    color: #777;
+
+    font-size: 17px;
+}
+
+
+/* ================================
+   CARTES OUTILS
+================================ */
+
+.outils-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.outil {
+    background: #f8f8ff;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid #eee;
+
+    transition: 0.3s;
+}
+
+.outil:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.icone {
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+.outil h3 {
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+.outil p {
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+
+/* Boutons des outils */
+
+.outil button {
+    border: none;
+
+    background: transparent;
+
+    color: #4f46e5;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    padding: 0;
+}
+
+.outil button:hover {
+    color: #7c3aed;
+}
+
+
+/* ================================
+   À PROPOS
+================================ */
+
+.apropos {
+    padding: 90px 8%;
+
+    text-align: center;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.apropos h2 {
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+.apropos p {
+    color: #666;
+
+    font-size: 18px;
+}
+
+
+/* ================================
+   PIED DE PAGE
+================================ */
+
+footer {
+    background: #17172b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+/* ================================
+   TÉLÉPHONE
+================================ */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 60px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .outils-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 50px 5%;
+    }
+
+    .hero-card {
+        width: 280px;
+        height: 280px;
+    }
+
+    #outils {
+        padding: 60px 5%;
+    }
+
+    .outils-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-titre h2 {
+        font-size: 32px;
+    }
+
+}
+/* ==========================================
+   FENÊTRES DES OUTILS
+========================================== */
+
+#fenetre-moyenne,
+#fenetre-planning {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.calculateur,
+.planning {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.calculateur h2,
+.planning h2 {
+
+    margin-bottom: 10px;
+
+    color: #4f46e5;
+}
+
+
+.calculateur p,
+.planning p {
+
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+
+/* Bouton fermer */
+
+.fermer {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    border: none;
+
+    background: #f1f1f1;
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+
+/* Champs */
+
+.planning input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+.planning input:focus {
+
+    border-color: #4f46e5;
+}
+
+
+/* Boutons */
+
+.calculer,
+.ajouter {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+
+/* Matières du planning */
+
+.matiere-planning {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px;
+
+    margin-top: 12px;
+
+    background: #f5f5ff;
+
+    border-radius: 12px;
+
+    border-left: 4px solid #4f46e5;
+}
+
+
+.matiere-planning span {
+
+    color: #4f46e5;
+
+    font-weight: bold;
+}
+/* ==========================================
+   GÉNÉRATEUR DE FICHES
+========================================== */
+
+#fenetre-fiches {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.fiches {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 600px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+
+.fiches h2 {
+
+    color: #4f46e5;
+
+    margin-bottom: 10px;
+}
+
+
+.fiches p {
+
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+
+.fiches input,
+.fiches textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+
+    outline: none;
+}
+
+
+.fiches textarea {
+
+    min-height: 130px;
+
+    resize: vertical;
+}
+
+
+.fiches input:focus,
+.fiches textarea:focus {
+
+    border-color: #4f46e5;
+}
+
+
+.fiche-resultat {
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background: #f5f5ff;
+
+    border-radius: 15px;
+
+    border-left: 5px solid #4f46e5;
+}
+
+
+.fiche-resultat h3 {
+
+    color: #4f46e5;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+.fiche-resultat h4 {
+
+    margin-top: 15px;
+
+    margin-bottom: 8px;
+
+    color: #333;
+}
+/* ==========================================
+   CHRONOMÈTRE POMODORO
+========================================== */
+
+#fenetre-chrono {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.chrono {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 450px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+
+.chrono h2 {
+
+    color: #4f46e5;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+.chrono p {
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+#temps {
+
+    font-size: 70px;
+
+    font-weight: bold;
+
+    color: #4f46e5;
+
+    margin: 25px 0;
+}
+
+
+.boutons-chrono {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.boutons-chrono button {
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.boutons-chrono button:hover {
+
+    background: #4338ca;
+}

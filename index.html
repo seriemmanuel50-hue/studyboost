@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyBoost - Outils pour étudiants</title>
+
+    <meta
+        name="description"
+        content="StudyBoost propose des outils gratuits pour aider les étudiants à mieux travailler, réviser et s'organiser."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- En-tête du site -->
+    <header>
+
+        <div class="logo">
+            Study<span>Boost</span>
+        </div>
+
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#outils">Outils</a>
+            <a href="#apropos">À propos</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Page d'accueil -->
+    <main>
+
+        <section id="accueil" class="hero">
+
+            <div class="hero-text">
+
+                <p class="petit-titre">
+                    🎓 Ton assistant étudiant
+                </p>
+
+                <h1>
+                    Travaille mieux.
+                    <br>
+                    Réussis mieux.
+                </h1>
+
+                <p class="description">
+                    Des outils simples et gratuits pour calculer
+                    tes notes, organiser tes révisions et gagner
+                    du temps dans tes études.
+                </p>
+
+                <a href="#outils" class="bouton">
+                    Découvrir les outils →
+                </a>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="emoji">
+                    📚
+                </div>
+
+                <h2>
+                    StudyBoost
+                </h2>
+
+                <p>
+                    Tous tes outils étudiants
+                    au même endroit.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Section des outils -->
+        <section id="outils">
+
+            <div class="section-titre">
+
+                <p>
+                    NOS OUTILS
+                </p>
+
+                <h2>
+                    Choisis ton outil
+                </h2>
+
+                <span>
+                    Des outils gratuits pour t'aider
+                    au quotidien.
+                </span>
+
+            </div>
+
+
+            <div class="outils-container">
+
+
+                <!-- Calculateur de moyenne -->
+                <article class="outil">
+
+                    <div class="icone">
+                        🧮
+                    </div>
+
+                    <h3>
+                        Calculateur de moyenne
+                    </h3>
+
+                    <p>
+                        Calcule rapidement ta moyenne
+                        générale à partir de tes notes.
+                    </p>
+
+                    <button onclick="ouvrirOutil('moyenne')">
+                        Utiliser →
+                    </button>
+
+                </article>
+
+
+                <!-- Planning -->
+                <article class="outil">
+
+                    <div class="icone">
+                        📅
+                    </div>
+
+                    <h3>
+                        Planning de révision
+                    </h3>
+
+                    <p>
+                        Organise tes séances de révision
+                        et prépare tes examens.
+                    </p>
+
+                    <button onclick="ouvrirOutil('planning')">
+                        Utiliser →
+                    </button>
+
+                </article>
+
+
+                <!-- Fiches -->
+                <article class="outil">
+
+                    <div class="icone">
+                        📝
+                    </div>
+
+                    <h3>
+                        Fiches de révision
+                    </h3>
+
+                    <p>
+                        Crée facilement des fiches pour
+                        retenir les informations importantes.
+                    </p>
+
+                    <button onclick="ouvrirOutil('fiches')">
+                        Utiliser →
+                    </button>
+
+                </article>
+
+
+                <!-- Chronomètre -->
+                <article class="outil">
+
+                    <div class="icone">
+                        ⏱️
+                    </div>
+
+                    <h3>
+                        Chronomètre de travail
+                    </h3>
+
+                    <p>
+                        Utilise la méthode Pomodoro pour
+                        travailler avec plus de concentration.
+                    </p>
+
+                    <button onclick="ouvrirOutil('chrono')">
+                        Utiliser →
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- À propos -->
+        <section id="apropos" class="apropos">
+
+            <h2>
+                Pourquoi StudyBoost ?
+            </h2>
+
+            <p>
+                StudyBoost a pour objectif de réunir
+                gratuitement les outils dont les étudiants
+                ont besoin pour mieux s'organiser et réussir.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Pied de page -->
+    <footer>
+
+        <p>
+            © 2026 StudyBoost — Tous droits réservés.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
